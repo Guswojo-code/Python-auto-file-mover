@@ -17,8 +17,8 @@ class MyHandler(FileSystemEventHandler):
             os.rename(src, new_destination)
            
 
-folder_to_track = "C:\\Users\\Gustav\\Downloads\\AltSomSkalFlyttesOverPåTranscend"
-folder_destination = "C:\\Users\\Gustav\\Documents\\Overførsler"
+folder_to_track = "The folder to take from"
+folder_destination = "The folder to go to"
 event_handler = MyHandler()
 observer = Observer()
 observer.schedule(event_handler, folder_to_track, recursive=True)
